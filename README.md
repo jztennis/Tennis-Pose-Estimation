@@ -1,12 +1,21 @@
-# Tennis-Pose-Estimation
-Uses OpenCV to correctly identify the pose of tennis players.
+# 🎾 Tennis Pose Estimation with YOLOv8
 
-# Runs
-## Most Recent Model
-Train/val loss graphs, see [results](https://github.com/jztennis/Tennis-Pose-Estimation/blob/main/runs/pose/tennis_pose_model3/results.png)
+This project uses a custom-trained YOLOv8 pose model to estimate the body and racquet keypoints of a tennis player from video footage. The primary goal is to visualize and analyze movement mechanics frame-by-frame for technique analysis and improvement.
 
-val_batch0 [actual labels](https://github.com/jztennis/Tennis-Pose-Estimation/blob/main/runs/pose/tennis_pose_model3/val_batch0_labels.jpg)
+## 🔍 Overview
 
-val_batch0 [predicted labels](https://github.com/jztennis/Tennis-Pose-Estimation/blob/main/runs/pose/tennis_pose_model3/val_batch0_pred.jpg)
+- 📹 Input: Standard tennis videos (e.g., `.mp4`)
+- 🤖 Model: Custom-trained YOLOv8 pose model
+- 🧠 Output: Visual overlay of keypoints per frame (13 keypoints per detected person)
+- 🎯 Use Case: Tennis technique analysis, coaching, and motion feedback
 
-weights [location](https://github.com/jztennis/Tennis-Pose-Estimation/tree/main/runs/pose/tennis_pose_model3/weights)
+## 📁 Project Structure
+
+```bash
+.
+├── example1.mp4                # Sample tennis video input
+├── runs/pose/tennis_pose_model11/
+│   └── weights/best.pt         # Trained YOLOv8 pose model
+├── tennis_pose_predictor.py    # Main script for inference and visualization
+├── data.yaml                   # Dataset config used for training
+├── README.md                   # This file
