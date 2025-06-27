@@ -21,3 +21,4 @@ This project uses a custom-trained YOLOv8 pose model to estimate the body and ra
 ├── test.py                     # Model testing
 ├── data.yaml                   # Dataset config used for training
 ├── README.md                   # This file
+```
