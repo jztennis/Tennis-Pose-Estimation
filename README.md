@@ -16,6 +16,7 @@ This project uses a custom-trained YOLOv8 pose model to estimate the body and ra
 ├── example1.mp4                # Sample tennis video input
 ├── runs/pose/tennis_pose_model11/
 │   └── weights/best.pt         # Trained YOLOv8 pose model
+│   └── result.png              # Train/Validation model results
 ├── tennis_pose_predictor.py    # Main script for inference and visualization
 ├── data.yaml                   # Dataset config used for training
 ├── README.md                   # This file
